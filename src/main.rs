@@ -29,7 +29,9 @@ fn main() {
     // heck, we might also consider add or insert the signature, maybe of a nonce, to the data that way we could use
     // the same data for multiple providers ... something to playbwith.
     // ideally, the data blob get's created with an updated nonce after every vdf output, e.g., signed hash of vdf out plus previous nonce
-    let data_size = 512; // 1024 * 1024 * 1024 * * 1024 * 16 // 16 GB
+
+    //let data_size = 512; // 1024 * 1024 * 1024 * 1024 * 16 // 16 GB
+    let data_size = 1024 * 1024 * 1024 * 16; // 16 GB
 
     // need nonce. maybe like K also
     let nonce = b"iamanonce"; // could use the hash of output from previous run and the submission batch requires order.
